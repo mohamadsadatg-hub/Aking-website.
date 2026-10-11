@@ -1,123 +1,223 @@
 
 <!DOCTYPE html>
-<html lang="tl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website ni Sadat</title>
+  <title>Sadat | Personal Portfolio</title>
+  <meta name="description" content="Sadat's personal portfolio for driving, cleaning, and office assistance opportunities.">
+
   <style>
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f1f5f9;
-      color: #1e293b;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #263247;
       line-height: 1.7;
     }
 
     header {
-      background: #12345a;
+      background: #102a43;
       color: white;
+      padding: 18px 20px;
       text-align: center;
-      padding: 55px 20px;
     }
 
     header h1 {
-      font-size: 34px;
+      font-size: 28px;
       margin-bottom: 8px;
     }
 
-    header p {
-      margin: 5px;
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #7dd3fc;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #102a43, #176b87);
+      color: white;
+      text-align: center;
+      padding: 75px 20px;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffffff;
+      color: #102a43;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #dbeafe;
     }
 
     main {
-      max-width: 750px;
-      margin: 25px auto;
-      padding: 0 16px;
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 18px;
     }
 
     section {
       background: white;
-      padding: 24px;
-      margin-bottom: 20px;
+      padding: 28px;
+      margin-bottom: 22px;
       border-radius: 12px;
-      box-shadow: 0 3px 12px #00000010;
+      box-shadow: 0 4px 15px rgba(16, 42, 67, 0.08);
     }
 
-    h2 {
-      color: #12345a;
+    section h2 {
+      color: #176b87;
+      margin-bottom: 15px;
+      font-size: 24px;
     }
 
-    .contact {
-      display: inline-block;
-      background: #12345a;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 8px;
-      text-decoration: none;
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
     }
 
     footer {
+      background: #102a43;
+      color: white;
       text-align: center;
-      padding: 20px;
-      color: #64748b;
+      padding: 22px 15px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 55px 18px;
+      }
+
+      .hero h2 {
+        font-size: 27px;
+      }
+
+      section {
+        padding: 22px;
+      }
+
+      nav {
+        gap: 12px;
+      }
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <h1>Hi, I'm Sadat!</h1>
-    <p>Welcome to My Personal Website</p>
-    <p>Driver | Cleaner | Office Boy</p>
+    <h1>Sadat's Portfolio</h1>
+    <p>Hardworking • Responsible • Honest</p>
+
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">My Skills</a>
+      <a href="#goal">Career Goal</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
+  <div class="hero">
+    <h2>Hello, I'm Sadat!</h2>
+    <p>
+      Welcome to my personal website.
+      I am ready to work, learn new skills,
+      and contribute to a successful team.
+    </p>
+    <a class="button" href="#about">Learn More About Me</a>
+  </div>
+
   <main>
-    <section>
+    <section id="about">
       <h2>About Me</h2>
       <p>
         Hello! My name is Sadat. I am a hardworking,
         responsible, and honest person. I am willing
         to learn new skills and work with a team.
+        I take my responsibilities seriously and
+        always try to do my best at work.
       </p>
     </section>
 
-    <section>
+    <section id="skills">
       <h2>My Skills</h2>
       <ul>
-        <li>Driving and transportation</li>
-        <li>Cleaning and maintaining workplaces</li>
-        <li>Office assistance and organizing tasks</li>
-        <li>Time management and teamwork</li>
+        <li>Driving</li>
+        <li>Cleaning and Maintaining Clean Spaces</li>
+        <li>Office Assistance</li>
+        <li>Hardworking and Responsible</li>
+        <li>Honest and Willing to Learn</li>
+        <li>Teamwork and Following Instructions</li>
       </ul>
     </section>
 
-    <section>
+    <section id="goal">
       <h2>My Career Goal</h2>
       <p>
-        I want to find a good job where I can use
-        my skills, gain experience, and contribute
-        to the success of the company.
+        I want to find a good job where I can use my
+        skills, gain experience, and contribute to
+        the success of the company. I am interested
+        in opportunities as a Driver, Cleaner, or
+        Office Assistant.
       </p>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Contact Me</h2>
       <p>
-        I am open to job opportunities.
-        Please contact me for work inquiries.
+        Thank you for visiting my website.
+        I welcome opportunities to work and grow
+        with a good company.
       </p>
-      <p>Email: Add your email address here</p>
+      <p>
+        Please contact me directly to discuss
+        job opportunities.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Sadat | My Personal Website</p>
+    <p>&copy; 2026 Sadat | Personal Portfolio</p>
+    <p>Thank you for visiting my website!</p>
   </footer>
-
 </body>
 </html>
